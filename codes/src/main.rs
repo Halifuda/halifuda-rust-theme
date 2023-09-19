@@ -1,4 +1,4 @@
-//! Mode comments.
+//! Mod comments.
 //!
 
 extern crate std;

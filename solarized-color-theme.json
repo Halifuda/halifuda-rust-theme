@@ -165,12 +165,11 @@
                 "entity.name.type.struct",
                 "entity.name.type.enum",
                 "entity.name.type.declaration",
-                "entity.name.namespace",
-                "entity.name.scope-resolution",
                 "entity.other.inherited-class"
             ],
             "settings": {
-                "foreground": "#996633"                
+                "foreground": "#996633",
+                "fontStyle": "italic"               
             }
         },
         {
@@ -181,8 +180,7 @@
                 "entity.name.type.trait",
             ],
             "settings": {
-                "foreground": "#993366",
-                "fontStyle": "bold"
+                "foreground": "#993366"
             }
         },
         {
