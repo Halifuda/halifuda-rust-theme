@@ -1,0 +1,31 @@
+{
+    "name": "theme-halifuda-solarized-light",
+    "displayName": "%displayName%",
+    "description": "%description%",
+    "version": "0.1.0",
+    "publisher": "halifuda",
+    "license": "MIT",
+    "engines": {
+        "vscode": "*"
+    },
+    "contributes": {
+        "themes": [
+            {
+                "id": "Halifuda Solarized Light",
+                "label": "%themeLabel%",
+                "uiTheme": "vs",
+                "path": "./solarized-color-theme.json"
+            },
+            {
+                "id": "Halifuda Dracula",
+                "label": "%themeLabel%",
+                "uiTheme": "vs-dark",
+                "path": "./dracula-color-theme.json"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Halifuda/halifuda-rust-theme.git"
+    }
+}
