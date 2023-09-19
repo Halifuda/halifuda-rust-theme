@@ -12,13 +12,13 @@
         "themes": [
             {
                 "id": "Halifuda Solarized Light",
-                "label": "%themeLabel%",
+                "label": "Halifuda Solarized Light",
                 "uiTheme": "vs",
                 "path": "./solarized-color-theme.json"
             },
             {
-                "id": "Halifuda Dracula",
-                "label": "%themeLabel%",
+                "id": "Halifuda Dracula Dark",
+                "label": "Halifuda Dracula Dark",
                 "uiTheme": "vs-dark",
                 "path": "./dracula-color-theme.json"
             }
