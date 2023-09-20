@@ -91,19 +91,15 @@
             "name": "Operators",
             "scope": "keyword.operator",
             "settings": {
-                "foreground": "#777777"
+                "foreground": "#777777",
+                "fontStyle": ""
             }
         },
         {
-            "name": "Bold Keywords",
-            "scope": [
-                "keyword.control",
-                "keyword.other.fn",
-                "keyword.operator.arrow",
-                "storage.modifier",
-            ],
+            "name": "Arrow",
+            "scope": "keyword.operator.arrow",
             "settings": {
-                "fontStyle": "bold"
+              "fontStyle": "bold"
             }
         },
         {
@@ -111,9 +107,11 @@
             "scope": [
                 "keyword",
                 "storage.modifier",
+                "variable.language",
             ],
             "settings": {
-                "foreground": "#55AAAA",
+                "foreground": "#449999",
+                "fontStyle": "bold"
             }
         },
         {
@@ -123,19 +121,26 @@
                 "variable.other.metavariable.specifier.rust"
             ],
             "settings": {
-                "foreground": "#cc55cc",
+                "foreground": "#CC55CC",
                 "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Built-in functions",
+            "scope": "support.function",
+            "settings": {
+              "foreground": "#CC55CC",
+              "fontStyle": "bold"
             }
         },
         {
             "name": "Variables, Arguments",
             "scope": [
                 "variable",
-                "keyword.operator.macro.dollar.rust",
                 "entity.name.type.metavariable.rust",
             ],
             "settings": {
-                "foreground": "#999911"
+                "foreground": "#333333"
             }
         },
         {
@@ -152,11 +157,30 @@
         {
             "name": "Functions",
             "scope": [
-                "entity.name.function",
-                "support.function"
+                "entity.name.function"
             ],
             "settings": {
                 "foreground": "#225599"
+            }
+        },
+        {
+          "name": "Function parameters",
+          "scope": [
+            "entity.name.variable.parameter",
+            "meta.at-rule.function variable",
+            "meta.at-rule.mixin variable",
+            "variable.parameter"
+          ],
+          "settings": {
+            "fontStyle": "italic",
+            "foreground": "#AA2266"
+          }
+        },
+        {
+            "name": "Macro dollar",
+            "scope": "keyword.operator.macro.dollar.rust",
+            "settings": {
+              "foreground": "#AA2266",
             }
         },
         {
@@ -191,7 +215,7 @@
                 "storage.modifier.lifetime.rust",
             ],
             "settings": {
-                "foreground": "#77cccc",
+                "foreground": "#AA55AAAA",
                 "fontStyle": "italic"
             }
         },
@@ -206,23 +230,15 @@
             }
         },
         {
-            "name": "Language Constants",
+            "name": "Constants",
             "scope": [
+                "constant",
+                "variable.other.constant",
                 "constant.language",
-                "support.constant",
-                "variable.language"
+                "support.constant"
             ],
             "settings": {
-                "foreground": "#0077EE",
-            }
-        },
-        {
-            "name": "Numbers",
-            "scope": [
-                "constant.numeric"
-            ],
-            "settings": {
-                "foreground": "#0055CC"
+                "foreground": "#00AAFF",
             }
         },
         {
@@ -236,7 +252,7 @@
             "name": "Strings: Escape Sequences",
             "scope": "constant.character.escape",
             "settings": {
-                "foreground": "#0055CC"
+                "foreground": "#00AAFF"
             }
         },
         {

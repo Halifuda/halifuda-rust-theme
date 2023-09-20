@@ -502,8 +502,7 @@
                 "entity.name.class"
             ],
             "settings": {
-                "foreground": "#8BE9FD",
-                "fontStyle": "normal"
+                "foreground": "#8BE9FD"
             }
         },
         {
@@ -515,7 +514,7 @@
             ],
             "settings": {
               "foreground": "#9BC9EE",
-              "fontStyle": "normal"
+              "fontStyle": ""
             }
         },
         {
@@ -537,22 +536,7 @@
                 "entity.name.type.metavariable.rust"
             ],
             "settings": {
-              "foreground": "#777700"
-            }
-        },
-        {
-            "name": "this, super, self, etc.",
-            "scope": [
-                "keyword.expressions-and-types.swift",
-                "keyword.other.this",
-                "variable.language",
-                "variable.language punctuation.definition.variable.php",
-                "variable.other.readwrite.instance.ruby",
-                "variable.parameter.function.language.special"
-            ],
-            "settings": {
-                "foreground": "#BD93F9",
-                "fontStyle": "italic"
+              "foreground": "#FFB86C"
             }
         },
         {
@@ -575,6 +559,124 @@
             ],
             "settings": {
                 "foreground": "#6272A4"
+            }
+        },
+        {
+            "name": "Constants",
+            "scope": [
+              "constant",
+              "variable.other.constant",
+              "constant.language",
+              "support.constant"
+            ],
+            "settings": {
+              "foreground": "#BD93F9"
+            }
+        },
+        {
+            "name": "Constant escape sequences",
+            "scope": [
+              "constant.character.escape",
+              "constant.character.string.escape",
+              "constant.regexp"
+            ],
+            "settings": {
+              "foreground": "#FF79C6"
+            }
+        },
+        {
+            "name": "Function names",
+            "scope": [
+              "entity.name.function",
+              "meta.function-call.object",
+              "meta.function-call.php",
+              "meta.function-call.static",
+              "meta.method-call.java meta.method",
+              "meta.method.groovy",
+              "support.function.any-method.lua",
+              "keyword.operator.function.infix"
+            ],
+            "settings": {
+              "foreground": "#50FA7B"
+            }
+        },
+        {
+            "name": "Function parameters",
+            "scope": [
+              "entity.name.variable.parameter",
+              "entity.name.type.metavariable.rust",
+              "meta.at-rule.function variable",
+              "meta.at-rule.mixin variable",
+              "meta.function.arguments variable.other.php",
+              "meta.selectionset.graphql meta.arguments.graphql variable.arguments.graphql",
+              "variable.parameter"
+            ],
+            "settings": {
+              "fontStyle": "italic",
+              "foreground": "#FFB86C"
+            }
+        },
+        {
+            "name": "Decorators",
+            "scope": [
+              "meta.decorator variable.other.readwrite",
+              "meta.decorator variable.other.property"
+            ],
+            "settings": {
+              "foreground": "#50FA7B",
+              "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "Decorator Objects",
+            "scope": [
+              "meta.decorator variable.other.object"
+            ],
+            "settings": {
+              "foreground": "#50FA7B"
+            }
+        },  
+        { 
+            "name": "Keywords",
+            "scope": [
+              "keyword",
+              "punctuation.definition.keyword"
+            ],
+            "settings": {
+              "foreground": "#FF79C6"
+            }
+        },  
+        {
+            "name": "Language Built-ins",
+            "scope": [
+              "support",
+              "variable.other.metavariable.specifier.rust"
+            ],
+            "settings": {
+              "fontStyle": "italic",
+              "foreground": "#8BE9FD"
+            }
+        },  
+        { 
+            "name": "Built-in magic functions and constants",
+            "scope": [
+              "support.function.magic",
+              "support.variable",
+              "variable.other.predefined"
+            ],
+            "settings": {
+              "fontStyle": "",
+              "foreground": "#BD93F9"
+            }
+        },  
+        { 
+            "name": "Built-in functions / properties",
+            "scope": [
+              "support.function",
+              "support.type.property-name"
+            ],
+            "settings": {
+              "fontStyle": ""
             }
         },
         {
@@ -618,27 +720,6 @@
             }
         },
         {
-            "name": "Constants",
-            "scope": [
-                "constant",
-                "variable.other.constant"
-            ],
-            "settings": {
-                "foreground": "#BD93F9"
-            }
-        },
-        {
-            "name": "Constant escape sequences",
-            "scope": [
-                "constant.character.escape",
-                "constant.character.string.escape",
-                "constant.regexp"
-            ],
-            "settings": {
-                "foreground": "#FF79C6"
-            }
-        },
-        {
             "name": "HTML tags",
             "scope": [
                 "entity.name.tag"
@@ -667,116 +748,12 @@
             }
         },
         {
-            "name": "Function names",
-            "scope": [
-                "entity.name.function",
-                "meta.function-call.object",
-                "meta.function-call.php",
-                "meta.function-call.static",
-                "meta.method-call.java meta.method",
-                "meta.method.groovy",
-                "support.function.any-method.lua",
-                "keyword.operator.function.infix"
-            ],
-            "settings": {
-                "foreground": "#50FA7B"
-            }
-        },
-        {
-            "name": "Function parameters",
-            "scope": [
-                "entity.name.variable.parameter",
-                "meta.at-rule.function variable",
-                "meta.at-rule.mixin variable",
-                "meta.function.arguments variable.other.php",
-                "meta.selectionset.graphql meta.arguments.graphql variable.arguments.graphql",
-                "variable.parameter"
-            ],
-            "settings": {
-                "fontStyle": "italic",
-                "foreground": "#FFB86C"
-            }
-        },
-        {
-            "name": "Decorators",
-            "scope": [
-                "meta.decorator variable.other.readwrite",
-                "meta.decorator variable.other.property"
-            ],
-            "settings": {
-                "foreground": "#50FA7B",
-                "fontStyle": "italic"
-            }
-        },
-        {
-            "name": "Decorator Objects",
-            "scope": [
-                "meta.decorator variable.other.object"
-            ],
-            "settings": {
-                "foreground": "#50FA7B"
-            }
-        },
-        {
-            "name": "Keywords",
-            "scope": [
-                "keyword",
-                "punctuation.definition.keyword"
-            ],
-            "settings": {
-                "foreground": "#FF79C6"
-            }
-        },
-        {
-            "name": "Keyword \"new\"",
-            "scope": [
-                "keyword.control.new",
-                "keyword.operator.new"
-            ],
-            "settings": {
-                "fontStyle": "bold"
-            }
-        },
-        {
             "name": "Generic selectors (CSS/SCSS/Less/Stylus)",
             "scope": [
                 "meta.selector"
             ],
             "settings": {
                 "foreground": "#FF79C6"
-            }
-        },
-        {
-            "name": "Language Built-ins",
-            "scope": [
-                "support",
-                "variable.other.metavariable.specifier.rust"
-            ],
-            "settings": {
-                "fontStyle": "italic",
-                "foreground": "#8BE9FD"
-            }
-        },
-        {
-            "name": "Built-in magic functions and constants",
-            "scope": [
-                "support.function.magic",
-                "support.variable",
-                "variable.other.predefined"
-            ],
-            "settings": {
-                "fontStyle": "regular",
-                "foreground": "#BD93F9"
-            }
-        },
-        {
-            "name": "Built-in functions / properties",
-            "scope": [
-                "support.function",
-                "support.type.property-name"
-            ],
-            "settings": {
-                "fontStyle": "regular"
             }
         },
         {
@@ -896,7 +873,7 @@
                 "source.groovy storage.type.def"
             ],
             "settings": {
-                "fontStyle": "regular",
+                "fontStyle": "",
                 "foreground": "#FF79C6"
             }
         },
@@ -1089,7 +1066,7 @@
                 "meta.variable.assignment.destructured.object.coffee variable variable"
             ],
             "settings": {
-                "fontStyle": "normal",
+                "fontStyle": "",
                 "foreground": "#F8F8F2"
             }
         },
@@ -1157,7 +1134,7 @@
                 "support.constant"
             ],
             "settings": {
-                "fontStyle": "normal",
+                "fontStyle": "",
                 "foreground": "#BD93F9"
             }
         },

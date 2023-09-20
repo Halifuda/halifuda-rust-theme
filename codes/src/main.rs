@@ -21,11 +21,16 @@ const N: usize = 10;
 #[derive(Debug)]
 struct ST<const N: usize>([usize; N]);
 
+#[repr(u8)]
 enum E {
-    EA,
+    T = 1,
 }
 
-trait TR {}
+trait TR {
+    fn t() -> bool {
+        true
+    }
+}
 trait GTR<T: TR> {}
 
 impl<const N: usize> TR for ST<N> {}
@@ -49,7 +54,7 @@ macro_rules! macro_name {
 }
 
 fn main() -> Result<()> {
-    let mut a = func_name(N);
+    let mut a = func_name(core::mem::size_of_val(&N));
     a += 1;
     let mut sub = sub::Sub::new(&mut a);
     sub.set(0x22);
