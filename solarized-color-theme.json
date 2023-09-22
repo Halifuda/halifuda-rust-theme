@@ -108,6 +108,7 @@
                 "keyword",
                 "storage.modifier",
                 "variable.language",
+                "storage.type"
             ],
             "settings": {
                 "foreground": "#449999",
