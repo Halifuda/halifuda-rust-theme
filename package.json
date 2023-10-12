@@ -1,31 +1,32 @@
 {
-    "name": "theme-halifuda-solarized-light",
-    "displayName": "%displayName%",
-    "description": "%description%",
-    "version": "0.1.0",
-    "publisher": "halifuda",
-    "license": "MIT",
-    "engines": {
-        "vscode": "*"
-    },
-    "contributes": {
-        "themes": [
-            {
-                "id": "Halifuda Solarized Light",
-                "label": "Halifuda Solarized Light",
-                "uiTheme": "vs",
-                "path": "./solarized-color-theme.json"
-            },
-            {
-                "id": "Halifuda Dracula Dark",
-                "label": "Halifuda Dracula Dark",
-                "uiTheme": "vs-dark",
-                "path": "./dracula-color-theme.json"
-            }
-        ]
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Halifuda/halifuda-rust-theme.git"
-    }
+  "name": "halifuda-rust-theme",
+  "displayName": "halifuda Rust Theme",
+  "description": "A VS Code theme for rust from Halifuda",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "id": "Halifuda Rust Dracula Dark",
+        "label": "Halifuda Rust Dracula Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dracula-color-theme.json"
+      },
+      {
+        "id": "Halifuda Rust Solarized Light",
+        "label": "Halifuda Rust Solarized Light",
+        "uiTheme": "vs",
+        "path": "./themes/solarized-color-theme.json"
+      }
+    ]
+  },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/Halifuda/halifuda-rust-theme.git"
+  }
 }
