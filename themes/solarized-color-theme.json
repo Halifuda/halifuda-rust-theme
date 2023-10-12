@@ -138,7 +138,6 @@
             "name": "Variables, Arguments",
             "scope": [
                 "variable",
-                "entity.name.type.metavariable.rust",
             ],
             "settings": {
                 "foreground": "#333333"
@@ -170,7 +169,9 @@
             "entity.name.variable.parameter",
             "meta.at-rule.function variable",
             "meta.at-rule.mixin variable",
-            "variable.parameter"
+            "variable.parameter",
+            "variable.other.metavariable.name.rust",
+            "meta.macro.metavariable.rust"
           ],
           "settings": {
             "fontStyle": "italic",

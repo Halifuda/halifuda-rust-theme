@@ -533,7 +533,8 @@
             "name": "Rust macro variable",
             "scope": [
                 "keyword.operator.macro.dollar.rust",
-                "entity.name.type.metavariable.rust"
+                "variable.other.metavariable.name.rust",
+                "meta.macro.metavariable.rust"
             ],
             "settings": {
               "foreground": "#FFB86C"
