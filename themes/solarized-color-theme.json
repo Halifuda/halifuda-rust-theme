@@ -119,7 +119,9 @@
             "name": "Primptive Types",
             "scope": [
                 "support.type",
-                "variable.other.metavariable.specifier.rust"
+                "variable.other.metavariable.specifier.rust",
+                "storage.type.built-in",
+                "storage.type.primitive"
             ],
             "settings": {
                 "foreground": "#CC55CC",
@@ -128,7 +130,9 @@
         },
         {
             "name": "Built-in functions",
-            "scope": "support.function",
+            "scope": [
+                "support.function",
+            ],
             "settings": {
               "foreground": "#CC55CC",
               "fontStyle": "bold"

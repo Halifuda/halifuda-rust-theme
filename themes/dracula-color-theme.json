@@ -508,7 +508,6 @@
         {
             "name": "Rust trait",
             "scope": [
-                "constant.other",
                 "support.class",
                 "entity.name.type.trait"
             ],
@@ -651,6 +650,8 @@
             "name": "Language Built-ins",
             "scope": [
               "support",
+              "storage.type.primitive",
+              "storage.type.built-in",
               "variable.other.metavariable.specifier.rust"
             ],
             "settings": {
