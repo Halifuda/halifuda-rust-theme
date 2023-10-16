@@ -12,3 +12,23 @@
 - A standalone color for lifetime.
 - Differentiate trait and struct.
 - Sync colors of function args and macro args.
+
+## Install
+
+Install from the release VSIX. You can use "install from VSIX" in VSCode extension manager.
+
+## Build
+
+To build, you need to first install Node.js. Then install `vsce`:
+```
+npm install -g @vscode/vsce
+```
+
+Then, under this dir, use:
+```
+vsce package
+```
+
+Then you can find the VSIX file.
+
+See [oficial-website](https://code.visualstudio.com/api/working-with-extensions/publishing-extension) for more information.
